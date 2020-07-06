@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="51" viewBox="0 0 111 51">
+  <g id="Group_3" data-name="Group 3" transform="translate(-16 -5)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-3 148)">
+      <text id="deb" transform="translate(19 -104)" font-size="36" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">deb</tspan></text>
+      <text id="s" transform="translate(92 -101)" font-size="36" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">s</tspan></text>
+      <text id="s-2" data-name="s" transform="translate(80 -104)" font-size="36" font-family="SegoeUI-Semilight, Segoe UI" font-weight="300"><tspan x="0" y="0">s</tspan></text>
+      <text id="s-3" data-name="s" transform="translate(106 -104)" font-size="36" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">s</tspan></text>
+      <text id="_." data-name="." transform="translate(122 -104)" font-size="36" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">.</tspan></text>
+    </g>
+  </g>
+</svg>

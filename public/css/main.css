@@ -1,0 +1,2034 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* loading container */
+
+.loading-screen {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #FFF4EC;
+    width: 0%;
+    height: 100%;
+}
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Navbar */
+
+li,a {
+    text-decoration: none !important;
+    color: #000000;
+    list-style: none;
+}
+.logo {
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: #FFF9FF;
+}
+nav, .social-links{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+nav, .social-links{
+    z-index:2;
+}
+
+.nav-links li, .social-links li {
+    display: inline-block
+}
+.nav-links li{
+    padding: 0px 15px;
+}
+.social-links li{
+    padding: 0px 20px;
+}
+.body{
+    background-color: #FFF9FF;
+}
+
+.toggle{
+    display: none;
+    
+}
+.overlay {
+    margin-right: 0%;
+    position: absolute;
+    background: #000000;
+    padding: 30px 3%;
+    width: 30%;
+    height: 100%;
+    left: calc(100% - 30%);
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.close-btn {
+    justify-self: end;
+    float: right;
+}
+.overlay ul{
+    float: left;
+    margin-top: 20px;
+    font-size: 25px;
+    display: grid;
+}
+.overlay ul li{
+    margin-bottom: 20px;
+}
+.overlay ul li a{
+    color: white;
+} 
+.show-menu{
+    display: block;
+}
+
+/*landing-page*/
+.home{
+    overflow: hidden;
+}
+
+.landing-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 3%;
+    align-items: center;
+    height: 90vh;
+    background-color: #FFF9FF;
+}
+.landing-container{
+    width: 100%;
+    height: 90vh
+}
+.landing-view{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "a b";
+}
+.landing-intro h1{
+    font-family: 'Playfair Display';
+    font-size: 400px;
+    opacity: 0.05;
+    cursor: context-menu;
+    position: absolute;
+    top: 125px;
+    transform: translateY(-50%, -50%);
+}
+.selfie {
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+.landing-intro h3{
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-size: 100px;
+    margin-top: 34%;
+}
+.landing-intro h4{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 85px;
+}
+
+.landing-intro button{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: 400;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 5px;
+}
+.landing-intro a button:hover{
+    background-color: black;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+
+
+/* About Me */
+
+.about{
+    background-color: #FFF9FF;
+    overflow: hidden;
+}
+.about-content{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 45% 55%;
+    padding: 10px 3%;
+    height: 90vh;
+}
+.quote{
+    justify-self: center;
+    align-self: center;
+}
+.quote p{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 65px;
+    line-height: 1.6;
+}
+.quote span{
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.author{
+    padding: 30px 0;
+    margin-right: 55px;
+    text-align: right;
+}
+.me{
+    justify-self: center;
+    align-self:center;
+}
+.me p {
+    font-family: 'Poppins';
+    margin: 30px 100px 30px 150px;
+}
+
+/*projects*/
+
+
+
+/*blog*/
+
+.blog{
+    background: #FFF9FF;
+    overflow: hidden;
+}
+.blog-container {
+    width: 100%;
+    padding: 0px 3%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.blog-container hr{
+    margin: 10px auto;
+    background-color: #000000;
+}
+.blog-view{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 30px;
+}
+.blog-card{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    cursor: context-menu
+}
+.card-content {
+    padding: 30px 20px;
+    
+}
+
+.card-content h1{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 25px;
+}
+.card-content p{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 25px 0px; 
+    padding-bottom: 150px;
+}
+.blog-card:hover{
+    opacity: 1;
+    
+}
+
+/* Contact */
+
+.contact{
+    background: #FFF9FF;
+    overflow: hidden;
+}
+.contact-container{
+    width: 100%;
+    padding: 0px 3%;
+    height: 90vh;
+}
+.contact-view{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    height: 90vh;
+}
+.contact-view h1, .contact-view h6{
+    justify-self: center;
+    align-self: center;
+}
+
+.contact-view h1{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 200px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #000000;
+    color: #FFF9FF;
+    cursor: pointer;
+}
+.contact-view h6 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+.contact-view h1 a{
+    text-decoration: none;
+    color: #FFF9FF;
+}
+
+/* Media queries based off of my laptop screen */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .overlay {
+        position: absolute;
+        width: 50%;
+        left: calc(100% - 50%);
+    }
+    .landing-view{
+        height: 90vh
+    }
+    .landing-intro h1{
+        display: none;
+    }
+    .landing-intro h3{
+        font-size: 50px !important;
+    }.landing-intro h4{
+        font-size: 25px !important;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 35% 65%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote p {
+        font-size: 25px;
+    }
+    .quote span {
+        font-size: 15px;
+    }
+    .me {
+        justify-self: center;
+        align-self: start;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 30px 0;
+        padding: 0 15px;
+    }
+    .contact-view h1 {
+        font-size: 150px;
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 35% 65%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    .quote span {
+        font-family: 'Montserrat';
+        font-size: 15px;
+    }
+    .me {
+        justify-self: center;
+        align-self: start;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 30px 0;
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .landing-view{
+        grid-template-columns: 100%;
+        grid-template-areas: "a";
+    }
+    .landing-intro h1 {
+        font-size: 150px !important;
+        top: 125px !important;
+        left: 170px !important;
+    }
+    .landing-intro h3{
+       font-size: 80px;
+    }
+    .landing-intro h4 {
+        font-size: 65px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    
+    .about-content {
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 30px;
+        line-height: 1.6;
+    }
+    .quote span {
+        font-size: 15px;
+    }
+    .me{
+        align-self: center;
+    }
+    .me p {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding: 0 10px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .toggle {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .overlay {
+        position: absolute;
+        width: 40%;
+        left: calc(100% - 40%);
+        display: none;
+    }
+    .show-menu{
+        display: grid;
+    }
+    .contact-view h1 {
+        text-align: center;
+    }
+    .landing-picture{
+        display: none;
+    }
+    .landing-view{
+        grid-template-columns: 100%;
+        grid-template-areas: "a";
+    }
+    .landing-intro{
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 250px;
+        top: 125px;
+        left: 220px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .landing-intro h1 {
+        font-size: 250px;
+        top: 140px;
+        position: fixed;
+    }
+    .landing-intro h3 {
+        font-size: 65px;
+    }
+    .landing-intro h4 {
+        font-size: 55px;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        grid-template-columns: 55% 45%;
+    }
+    .quote p{
+        font-size:50px;
+    }
+    .me p {
+        margin: 0px 0px 30px 0px;
+        text-align: justify;
+    }
+    .me {    
+        padding: 0 15px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .landing-intro h1 {
+        font-size: 350px;
+        top: 100px;
+    }
+    .landing-intro h3 {
+        font-size: 80px;
+    }
+    .landing-intro h4 {
+        font-size: 65px;
+    }
+    .about-content{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "a b";
+        grid-template-columns: 45% 55%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote{
+        justify-self: center;
+        align-self: center;
+    }
+    .quote p{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size:50px;
+        line-height: 1.6;
+    }
+    .quote span{
+        font-family: 'Montserrat';
+        font-size: 20px;
+    }
+    
+    .author{
+        padding: 30px 0;
+        margin-right: 55px;
+        text-align: right;
+    }
+    .me{
+        justify-self: center;
+        align-self:center;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 30px 100px 30px 150px;
+    }
+}
+
+/* full resolution */
+
+@media only screen and (min-width: 1455px) {
+    .quote p{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size:60px;
+        line-height: 1.6;
+    }
+    .landing-page{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px 0px 3%;
+        align-items: center;
+        height: 90vh;
+        background-color: #FFF9FF;
+    }
+    .landing-container{
+        width: 100%;
+        height: 90vh
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-areas: "a b";
+    }
+    .landing-intro h1{
+        font-family: 'Playfair Display';
+        font-size: 400px !important;
+        opacity: 0.05;
+        cursor: context-menu;
+        position: absolute;
+        top: 125px;
+    }
+    .selfie {
+        width: 100%;
+        position: relative;
+        top: -50px;
+    }
+    .landing-intro h3{
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 100px !important;
+        margin-top: 34%;
+    }
+    .landing-intro h4{
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 85px !important;
+    }
+    
+    .landing-intro button{
+        font-family: 'Montserrat';
+        font-size: 15px;
+        padding: 10px 30px;
+        font-weight: 400;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+    .landing-intro button:hover{
+        background-color: black;
+        color: #FFFFFF;
+    }
+
+}
+
+@media (width: 1920px) and (max-height: 1080px){
+    .landing-page {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px 0px 3%;
+        align-items: center;
+        height: 100vh;
+        background-color: #FFF9FF;
+    }
+    .landing-intro h1 {
+        font-family: 'Playfair Display';
+        font-size: 400px !important;
+        opacity: 0.05;
+        cursor: context-menu;
+        position: absolute;
+        top: 260px;
+    }
+
+}
+
+
+/*Media queries for smaller devices*/
+
+/*media query for 768x1024 screens*/
+
+@media (width: 768px) and (max-height: 1024px){
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 300px;
+        top: -25px;
+        left: 80px;
+    }
+    .landing-intro h3{
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 80px;
+        margin-top: 65px;
+    }
+    .landing-intro h4{
+        font-size: 65px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        position: relative;
+    }
+    .landing-picture{
+        width: 85%;
+        justify-self: center;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 50px;
+        line-height: 1.6;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .contact-view h1 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 150px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px #000000;
+        color: #FFF9FF;
+        cursor: pointer;
+    }
+}
+/* media query for 1024*768 screens */
+@media (width: 1024px) and (max-height: 768px){
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 300px;
+    }
+    .landing-intro h3 {
+        font-size: 80px;
+        margin-top: 38%;
+    }
+    .landing-intro h4 {
+        font-size: 65px;
+    }
+    .landing-picture {
+        align-self: end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 50px;
+        line-height: 1.6;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 0px 0px 10px 30px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        margin-top: 30px;
+    }
+}
+
+/*media query for 375x812 screens*/
+
+@media (width: 375px) and (max-height: 812px) {
+    .logo {
+        width: 75%;
+    }
+    .menu{
+        width: 9%;
+    }
+    .overlay ul li a {
+        font-size: 15px;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 70px;
+        left: 62px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 75px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 45% 55%;
+    }
+    .quote {
+        margin-top: 60px;
+    }
+    .quote p {
+        font-size: 35px;
+    }
+    .author {
+        margin-right: 35px;
+        float: right;
+        font-size: 15px;
+    }
+    .me {
+        margin: 50px 15px;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    
+}
+
+/* media query for 812x375 screens */
+
+@media (width: 812px) and (height: 375px) {
+    .logo {
+        cursor: pointer;
+        width: 50%;
+    }
+    .menu{
+        width: 3%;
+    }
+    .overlay ul {
+        float: left;
+        margin-top: 0;
+        font-size: 25px;
+        display: grid;
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+        font-size: 15px;
+        align-self: center;
+    }
+
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 200px;
+        top: 0;
+    }
+    .landing-intro h3 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 75%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        line-height: 1.6;
+        font-size: 25px;
+    }
+    .quote span{
+        font-size: 17px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;  
+    }
+    .blog-card{
+        justify-self: center;
+        height: 250px;
+    }
+    .contact-view {
+        grid-template-rows: 80% 20%;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+    }
+}
+
+/* media query for 414x736 screens */
+
+@media (width: 414px) and (max-height: 736px){
+    .logo {
+        cursor: pointer;
+        width: 75%;
+    }
+    .menu{
+        width: 7%;
+    }
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 70px;
+        left: 80px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 55px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 35% 65%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote {
+        justify-self: center;
+        align-self: center;
+        margin-top: 60px;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .quote span {
+        font-size: 15px;
+    }
+    .author {
+        padding: 10px 0;
+        margin-right: 35px;
+        float: right;
+        font-size: 15px;
+    }
+    .me {
+        justify-self: center;
+        align-self: center;
+        margin: 50px 15px;
+        text-align: justify;
+    }
+    .me p{
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+        text-align: center;
+    }
+}
+
+/*media query for 736x414 screens*/
+
+@media (width: 736px) and (max-height: 414px){
+    .logo {
+        cursor: pointer;
+        width: 50%;
+    }
+    .menu{
+        width: 3%;
+    }
+    .overlay ul {
+        margin-top: 0;
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 200px;
+        top: 0;
+    }
+    .landing-intro h3 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 90%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        line-height: 1.6;
+        font-size: 25px;
+    }
+    .quote span{
+        font-size: 17px;
+    }
+    .quote .author{
+        margin-right: 30px;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 0px 0px 10px 30px;
+        font-size: 16px;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view {
+        grid-template-rows: 80% 20%;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+    }
+}
+
+/*media query for 375x667 screens*/
+@media (width: 375px) and (height: 667px) {
+    .logo {
+        cursor: pointer;
+        width: 75%;
+    }
+    .menu{
+        width: 7%;
+    }
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 70px;
+        left: 60px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 35% 65%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote {
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .quote span {
+        font-size: 15px;
+    }
+    .author {
+        padding: 10px 0;
+        margin-right: 35px;
+        float: right;
+        font-size: 15px;
+    }
+    .me {
+        justify-self: center;
+        align-self: center;
+        margin: 50px 15px;
+        text-align: justify;
+    }
+    .me p{
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+        text-align: center;
+    }
+}
+
+/*media query for 667x375 screens*/
+@media (width: 667px) and (max-height: 375px)
+{
+    .logo {
+        cursor: pointer;
+        width: 50%;
+    }
+    .menu{
+        width: 3%;
+    }
+    .overlay ul {
+        float: left;
+        margin-top: 0px;
+        font-size: 25px;
+        display: grid;
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 190px;
+        top: 0;
+    }
+    .landing-intro h3 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 90%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        line-height: 1.6;
+        font-size: 25px;
+    }
+    .quote span{
+        font-size: 17px;
+    }
+    .quote .author{
+        margin-right: 30px;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .me {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .me p {
+        font-family: 'Poppins';
+        font-size: 14px;
+        text-align: justify;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+        height: 250px;
+    }
+    .contact-view {
+        grid-template-rows: 80% 20%;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+    }
+}
+
+/*media query for 320x568 screens*/
+
+@media (width: 320px) and (max-height: 568px){
+    *{
+        overflow: hidden;
+    }
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 60px;
+        left: 33px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 55px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .me p{
+        font-size: 14px;
+    }
+    .quote span{
+        font-size: 12px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    .contact-view {
+        grid-template-rows: 80% 20%;
+    }
+}
+
+/*media query for 568x320 screens*/
+
+@media (width: 568px) and (max-height: 320px){
+    .overlay ul {
+        float: left;
+        margin-top: 0px;
+        font-size: 15px;
+        display: grid;
+        
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .quote p{
+        font-size: 18px;
+    }
+    .quote span {
+        font-size: 14px;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 150px;
+        top: 0;
+    }
+    .landing-intro h3 {
+        font-size: 40px;
+        margin-top: 2%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 90%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+
+    .me p{
+        font-size: 10px;
+        margin-top: 0;
+        text-align: justify;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+        height: 175px;
+        width: 250px;
+    }
+    .card-content{
+        padding: 20px 20px;
+    }
+    .card-content h1 {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 12px;
+        padding: 25px 0px;
+        padding-bottom: 75px;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    .contact-view {
+        grid-template-rows: 60% 40%;
+    }
+}
+
+/*media query for 411x823 screens*/
+
+@media (width: 411px) and (max-height: 823px){
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 82px;
+        left: 80px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 55px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "a"
+            "b";
+        grid-template-rows: 35% 65%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote {
+        margin: 0px;
+    }
+    .quote p{
+        font-size: 30px;
+    }
+    .author {
+        padding: 0px;
+        margin-right: 25px;
+        text-align: right;
+    }
+    .me p {
+        font-family: 'Poppins';
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+        text-align: center;
+    }
+}
+
+/*media query for 823x411 screens*/
+
+@media (width: 823px) and (max-height: 411px){
+    .overlay ul {
+        margin-top: 0;
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 200px;
+        top: 27px;
+    }
+    .landing-intro h3 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 75%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    
+    .quote p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        padding: 5px 20px;
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    .me {
+        justify-self: center;
+    }
+    .me p{
+        font-size: 15px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+        height: 250px;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    .contact-view {
+        grid-template-rows: 60% 40%;
+    }
+}
+
+/* media query for 411x731 screens*/
+@media (width: 411px) and (max-height: 731px){
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 85px;
+        left: 80px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 55px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 125px;
+        text-align: center;
+    }
+}
+
+/* media query for 731x411 screens*/
+@media (width: 731px) and (max-height: 411px){
+    .overlay ul {
+        margin-top: 0;
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 200px;
+        top: 20px;
+    }
+    .landing-intro h3 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 90%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .me p{
+        font-size: 12px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+        height: 250px;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    .contact-view {
+        grid-template-rows: 60% 40%;
+    }
+
+}
+
+/*media query for 360x640 screens */
+
+@media (width: 360px) and (max-height: 640px){
+    .overlay {
+        width: 40%;
+        left: calc(100% - 40%);
+    }
+    .overlay ul{
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .overlay ul li{
+        align-self: center;
+    }
+    .landing-page{
+        padding: 0;
+        
+    }
+    .landing-view{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b";
+        grid-template-rows: 40% 60%;
+        height: 90vh
+    }
+    .landing-intro{
+        justify-self: center;
+        text-align: center;
+    }
+    .landing-intro h1 {
+        font-size: 125px;
+        top: 60px;
+        left: 55px;
+    }
+    .landing-intro h3{
+        font-size: 30px;
+        margin-top: 55px;
+    }
+    .landing-intro h4{
+        font-size: 25px;
+    }
+    .landing-intro button {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .landing-picture{
+        justify-self: center;
+        width: 90%;
+    }
+    .selfie{
+        top: 0;
+    }
+    .quote p {
+        font-size: 20px;
+    }
+    .me p {
+        font-size: 16px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+}
+
+/*media query for 640x360 screens*/
+
+@media (width: 640px) and (max-height: 360px){
+    .overlay ul {
+        float: left;
+        margin-top: 0px;
+        font-size: 15px;
+        display: grid;
+        
+    }
+    .overlay ul li{
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .landing-view{
+        height: 90vh;
+    }
+    .landing-intro h1 {
+        font-size: 150px;
+        top: 8px;
+    }
+    .landing-intro h3 {
+        font-size: 40px;
+        margin-top: 2%;
+    }
+    .landing-intro h4 {
+        font-size: 40px;
+    }
+    .landing-intro button{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .landing-picture {
+        width: 90%;
+        align-self: end;
+        justify-self: flex-end;
+    }
+    .selfie{
+        top: 0;
+    }
+    .about-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 100%;
+        padding: 10px 3%;
+        height: 90vh;
+    }
+    .quote p {
+        font-size: 20px;
+    }
+    .me p {
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .quote span {
+        font-size: 14px;
+    }
+    .blog-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    .blog-card{
+        justify-self: center;
+        height: 175px;
+        width: 250px;
+    }
+    .card-content{
+        padding: 20px 20px;
+    }
+    .card-content h1 {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 12px;
+        padding: 25px 0px;
+        padding-bottom: 75px;
+    }
+    .contact-view h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    .contact-view {
+        grid-template-rows: 60% 40%;
+    }
+}
+
+
